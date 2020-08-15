@@ -92,7 +92,7 @@ function handleReload() {
 
 function handleImage() {
   const image = new Image();
-  const number = Math.floor(Math.random() * 10 + 1);
+  const number = Math.floor(Math.random() * 18 + 1);
   image.src = `${number}.jpg`;
   console.log(image.src);
   image.onload = () => {
