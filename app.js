@@ -82,13 +82,22 @@ function handleReload() {
   location.reload();
 }
 
-function handleImage() {
+// function handleImage(event) {
+//   const image = new Image();
+//   const number = Math.floor(Math.random() * 10 + 1);
+//   image.src = `./${number}.jpg`;
+//   console.log(image.src);
+//   ctx.drawImage(image, 0, 0, 700, 600);
+// }
+
+function handleImage(event) {
   const image = new Image();
   const number = Math.floor(Math.random() * 10 + 1);
   image.src = `${number}.jpg`;
   console.log(image.src);
-
-  ctx.drawImage(image, 0, 0, 700, 600);
+  image.onload = () => {
+    ctx.drawImage(image, 0, 0, 700, 600);
+  };
 }
 
 if (canvas) {
