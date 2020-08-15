@@ -84,9 +84,8 @@ function handleReload() {
 
 function handleImage() {
   const image = new Image();
-  const number = Math.floor(Math.random() * 10);
-
-  image.src = `${number + 1}.jpg`;
+  const number = Math.floor(Math.random() * 10 + 1);
+  image.src = `${number}.jpg`;
   console.log(image.src);
 
   ctx.drawImage(image, 0, 0, 700, 600);
