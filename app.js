@@ -90,7 +90,7 @@ function handleReload() {
 //   ctx.drawImage(image, 0, 0, 700, 600);
 // }
 
-function handleImage(event) {
+function handleImage() {
   const image = new Image();
   const number = Math.floor(Math.random() * 10 + 1);
   image.src = `${number}.jpg`;
