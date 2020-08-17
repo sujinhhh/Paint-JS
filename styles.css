@@ -8,7 +8,7 @@ body {
   align-items: center;
   padding-top: 60px;
   color: black;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
