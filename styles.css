@@ -8,6 +8,7 @@ body {
   align-items: center;
   padding-top: 60px;
   color: black;
+  overflow: hidden;
 }
 
 h1 {
@@ -78,48 +79,4 @@ h1 {
 
 span {
   padding-right: 20px;
-}
-
-@media (min-width: 481px) {
-  h1 {
-    color: white;
-    font-size: 15px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-  }
-  .canvas {
-    width: 400px;
-    height: 500px;
-  }
-  .controls_btns button {
-    flex-direction: column;
-    all: unset;
-    cursor: pointer;
-    background-color: white;
-    padding: 10px 0px;
-    margin-right: 20px;
-    width: 100px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 20px 100px rgb(152, 105, 245), 0 8px 20px black;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 15px;
-    color: black;
-  }
-  .controls_colors .control_color {
-    flex-direction: column;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 20px 100px white, 0 8px 20px black;
-  }
-  }
-  .controls .controls_range {
-    margin-bottom: 20px;
-  }
-  #jb-footer {
-    clear: both;
-  }
 }
