@@ -1,2 +1,2 @@
 # Paint-JS
-JS study
+JS, HTML canvas
